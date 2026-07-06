@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnav Sharma — Electrical Engineer & Tech Enthusiast. BE Electrical Engineering student at Thapar Institute of Engineering and Technology, Patiala. Portfolio showcasing projects, skills, and certifications.">
+    <meta name="keywords" content="Arnav Sharma, Electrical Engineer, TIET, Thapar, Portfolio, Developer, Python, C Programming, AI, Machine Learning">
+    <meta name="author" content="Arnav Sharma">
+    <title>Arnav Sharma | Electrical Engineer & Tech Enthusiast</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="greeting-line"></span>
+                    Hello, I'm
+                </p>
+                <h1 class="hero-name">
+                    Arnav <span class="name-accent">Sharma</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">I'm a </span>
+                    <span class="typed-text" id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Electrical Engineering student at Thapar Institute of Engineering and Technology, Patiala.
+                    Passionate about innovation, technology, and building the future.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/ArnavSharma-2007" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/arnav-sharma-3803b0377" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:sharma.arnav1510@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-ring"></div>
+                    <img src="assets/profile.jpeg" alt="Arnav Sharma" class="hero-image">
+                </div>
+                <div class="hero-status">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-col">
+                    <div class="about-image-card">
+                        <img src="assets/profile.jpeg" alt="Arnav Sharma" class="about-image">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2029">0</span>
+                            <span class="stat-label">Batch</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <h3 class="about-heading">
+                        Electrical Engineer &
+                        <span class="accent">Tech Enthusiast</span>
+                    </h3>
+                    <p class="about-description">
+                        I'm Arnav Sharma, a passionate Electrical Engineering student at
+                        <strong>Thapar Institute of Engineering and Technology (TIET), Patiala</strong>
+                        (Batch 2025–2029). I'm driven by a deep curiosity for technology and innovation.
+                    </p>
+                    <p class="about-description">
+                        My journey in tech extends beyond the classroom — I've completed certifications in
+                        <strong>Python, C Programming, Artificial Intelligence, and Machine Learning</strong>,
+                        and I'm constantly exploring new domains to broaden my skill set.
+                    </p>
+                    <p class="about-description">
+                        I believe in building things that make a difference and am eager to contribute
+                        to meaningful projects in technology and engineering.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Patiala, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sharma.arnav1510@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BE Electrical Engineering</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span>TIET, Patiala</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">
+                        <i class="fas fa-download"></i> Let's Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category-card" data-animate="fade-up">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-category-title">Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <!-- AI / ML -->
+                <div class="skill-category-card" data-animate="fade-up">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-category-title">AI & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Artificial Intelligence</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+                <!-- Web Dev -->
+                <div class="skill-category-card" data-animate="fade-up">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="skill-category-title">Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <!-- Engineering -->
+                <div class="skill-category-card" data-animate="fade-up">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="skill-category-title">Electrical Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Circuit Analysis</span>
+                        <span class="skill-tag">Electronics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">My <span class="accent">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-animate="fade-up">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ArnavSharma-2007" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link-icon" aria-label="External Link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-description">
+                        A modern, responsive personal portfolio website built with vanilla HTML, CSS, and JavaScript.
+                        Features include particle animations, smooth scrolling, certificate gallery with verification
+                        links, and a fully responsive design with dark mode aesthetics.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge">
+                            <span class="status-dot-small"></span>
+                            Live Project
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <div class="project-card project-card-coming-soon" data-animate="fade-up">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <h3 class="project-title">More Coming Soon</h3>
+                    <p class="project-description">
+                        Currently working on exciting new projects. Stay tuned for updates as I continue
+                        to explore and build innovative solutions in engineering and technology!
+                    </p>
+                    <div class="project-tech">
+                        <span>???</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section section-alt" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;certificates&gt;</span>
+                <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certificates-grid">
+                <!-- Certificate 1: C Programming -->
+                <div class="cert-card" data-animate="fade-up">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/cert-c-programming.jpg" alt="Complete C Programming Certificate" class="cert-image" loading="lazy">
+                        <div class="cert-image-overlay">
+                            <button class="cert-zoom-btn" onclick="openCertModal('assets/cert-c-programming.jpg', 'Complete C Programming')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-platform">
+                            <i class="fas fa-graduation-cap"></i> Udemy
+                        </div>
+                        <h3 class="cert-title">Complete C Programming with Projects, Assignments & Quizzes</h3>
+                        <p class="cert-instructor">Instructor: Comp Trainers</p>
+                        <div class="cert-meta">
+                            <span><i class="fas fa-calendar-alt"></i> April 21, 2026</span>
+                            <span><i class="fas fa-clock"></i> 10.5 hours</span>
+                        </div>
+                        <a href="https://ude.my/UC-443b8e5b-2aad-4b5a-ac61-a8d89e5efff0" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">
+                            <i class="fas fa-check-circle"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: Python -->
+                <div class="cert-card" data-animate="fade-up">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/cert-python.jpg" alt="Python Complete Course Certificate" class="cert-image" loading="lazy">
+                        <div class="cert-image-overlay">
+                            <button class="cert-zoom-btn" onclick="openCertModal('assets/cert-python.jpg', 'Python Complete Course')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-platform">
+                            <i class="fas fa-graduation-cap"></i> Udemy
+                        </div>
+                        <h3 class="cert-title">Python Complete Course For Python Beginners</h3>
+                        <p class="cert-instructor">Instructor: Horizon Tech</p>
+                        <div class="cert-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Sept 9, 2025</span>
+                            <span><i class="fas fa-clock"></i> 7.5 hours</span>
+                        </div>
+                        <a href="https://ude.my/UC-c00498cc-281b-46a0-99de-6270fdb2aec8" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">
+                            <i class="fas fa-check-circle"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: AI -->
+                <div class="cert-card" data-animate="fade-up">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/cert-ai.jpg" alt="Artificial Intelligence Certificate" class="cert-image" loading="lazy">
+                        <div class="cert-image-overlay">
+                            <button class="cert-zoom-btn" onclick="openCertModal('assets/cert-ai.jpg', 'Artificial Intelligence')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-platform">
+                            <i class="fas fa-award"></i> Kshitij, IIT Kharagpur / 1Stop
+                        </div>
+                        <h3 class="cert-title">Artificial Intelligence</h3>
+                        <p class="cert-instructor">Certificate of Participation</p>
+                        <div class="cert-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Nov 1, 2025</span>
+                            <span><i class="fas fa-clock"></i> Sep – Nov 2025</span>
+                        </div>
+                        <a href="https://www.1stop.ai/verify-qrcode/QahSAHNCka" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">
+                            <i class="fas fa-check-circle"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 4: ML -->
+                <div class="cert-card" data-animate="fade-up">
+                    <div class="cert-image-wrapper">
+                        <img src="assets/cert-ml.jpg" alt="Machine Learning Certificate" class="cert-image" loading="lazy">
+                        <div class="cert-image-overlay">
+                            <button class="cert-zoom-btn" onclick="openCertModal('assets/cert-ml.jpg', 'Machine Learning')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-platform">
+                            <i class="fas fa-award"></i> Kshitij, IIT Kharagpur / 1Stop
+                        </div>
+                        <h3 class="cert-title">Machine Learning</h3>
+                        <p class="cert-instructor">Certificate of Participation</p>
+                        <div class="cert-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Nov 1, 2025</span>
+                            <span><i class="fas fa-clock"></i> Sep – Nov 2025</span>
+                        </div>
+                        <a href="https://www.1stop.ai/verify-qrcode/QahSAHNCka" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">
+                            <i class="fas fa-check-circle"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal" id="cert-modal">
+        <div class="cert-modal-backdrop" onclick="closeCertModal()"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" id="cert-modal-image" class="cert-modal-image">
+            <p class="cert-modal-title" id="cert-modal-title"></p>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">My <span class="accent">Education</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">2025 — 2029</div>
+                        <h3 class="timeline-title">BE Electrical Engineering</h3>
+                        <h4 class="timeline-subtitle">
+                            <i class="fas fa-university"></i>
+                            Thapar Institute of Engineering & Technology (TIET)
+                        </h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Patiala, Punjab, India
+                        </p>
+                        <p class="timeline-description">
+                            Pursuing Bachelor of Engineering in Electrical Engineering with a strong
+                            foundation in circuit analysis, electronics, power systems, and signal processing.
+                            Actively exploring AI, ML, and software development alongside core engineering.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Electrical Engineering</span>
+                            <span>TIET'29</span>
+                            <span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-col">
+                    <h3 class="contact-heading">Let's talk about<br><span class="accent">everything!</span></h3>
+                    <p class="contact-text">
+                        Feel free to reach out for collaborations, project ideas, or just a friendly hello.
+                        I'm always open to discussing new opportunities and innovative ideas.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-detail-label">Email</p>
+                                <a href="mailto:sharma.arnav1510@gmail.com" class="contact-detail-value">sharma.arnav1510@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="contact-detail-label">Location</p>
+                                <p class="contact-detail-value">Patiala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/ArnavSharma-2007" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/arnav-sharma-3803b0377" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:sharma.arnav1510@gmail.com" class="contact-social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-col">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                            <label for="form-name" class="form-label">Your Name</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                            <label for="form-email" class="form-label">Your Email</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="form-subject" class="form-input" placeholder=" ">
+                            <label for="form-subject" class="form-label">Subject</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" class="form-input form-textarea" placeholder=" " required rows="5"></textarea>
+                            <label for="form-message" class="form-label">Your Message</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Arnav Sharma<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by Arnav Sharma &copy; <span id="footer-year">2026</span>. All rights reserved.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/ArnavSharma-2007" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/arnav-sharma-3803b0377" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:sharma.arnav1510@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
